@@ -48,3 +48,18 @@
 #     Попытки закончились
 
 # Решение
+secret = 37
+max_attempts = 5
+
+for attempt in range(1, max_attempts + 1):
+    guess = int(input('Ваша догадка: '))
+    
+    if guess == secret:
+        print(f'Угадано с попытки {attempt}')
+        break
+    elif guess < secret:
+        print('Больше')
+    else:
+        print('Меньше')
+else:
+    print('Попытки закончились')
