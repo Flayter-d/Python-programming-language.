@@ -35,3 +35,10 @@
 #     Всего шагов: 12000
 
 # Решение
+total = 0
+while True:
+    steps = int(input('Шаги за день (0 — конец): '))
+    if steps == 0:
+        break
+    total += steps
+print('Всего шагов:', total)
