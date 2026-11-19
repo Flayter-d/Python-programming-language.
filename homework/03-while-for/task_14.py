@@ -47,3 +47,13 @@
 #     Среднее: 7.00
 
 # Решение
+n = int(input("Число показаний: "))
+minimum = None
+total = 0
+for _ in range(n):
+    t = int(input("Показание, °C: "))
+    total += t
+    if minimum is None or t < minimum:
+        minimum = t
+print(f"Минимум: {minimum}")
+print(f"Среднее: {total / n:.2f}")
