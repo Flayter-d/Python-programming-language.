@@ -34,3 +34,17 @@
 #     Не совершенное
 
 # Решение
+n = int(input("Натуральное число: "))
+
+if n == 1:
+    print("Не совершенное")
+else:
+    div_sum = 0
+    for d in range(1, n):
+        if n % d == 0:
+            div_sum += d
+
+    if div_sum == n:
+        print("Совершенное")
+    else:
+        print("Не совершенное")
