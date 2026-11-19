@@ -33,3 +33,8 @@
 #     10! = 3628800
 
 # Решение
+n = int(input("Число n: "))
+factorial = 1
+for i in range(2, n + 1):
+    factorial *= i
+print(f"{n}! = {factorial}")
