@@ -28,3 +28,6 @@
 #     Слов: 0
 
 # Решение
+phrase = input("Фраза: ")
+words = phrase.count(" ") + (1 if phrase else 0)
+print(f"Слов: {words}")
