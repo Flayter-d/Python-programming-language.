@@ -33,10 +33,6 @@
 #     False
 
 # Решение
-price1 = int(input("Цена первого товара, руб.: ")) price2 = int(input("Цена второго товара, руб.: "))
+year = int(input("Год: "))
 
-#Считаем, сколько товаров дороже 1000 рублей
-count_over_1000 = 0 if price1 > 1000: count_over_1000 += 1 if price2 > 1000: count_over_1000 += 1
-
-#Купон действует, если ровно один товар дороже 1000
-coupon_valid = count_over_1000 == 1 print(coupon_valid)
+is_leap = (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0) print(is_leap)
